@@ -400,10 +400,10 @@
     <property name="skip_pager_hint">True</property>
     <property name="transient_for">gtkhostsetup</property>
     <property name="program_name">gtkhostsetup</property>
-    <property name="copyright">Copyright © 2010-2021 George Vlahavas</property>
+    <property name="copyright">Copyright © 2010-2021 George Vlahavas. Forked by rizalmart</property>
     <property name="comments" translatable="yes">Configure the system hostnames</property>
-    <property name="website">http://www.salixos.org</property>
-    <property name="website_label">http://www.salixos.org</property>
+    <property name="website">https://github.com/rizalmart/xsystemtools</property>
+    <property name="website_label">https://github.com/rizalmart/xsystemtools</property>
     <property name="license">                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

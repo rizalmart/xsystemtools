@@ -1,8 +1,8 @@
 [Desktop Entry]
 _Name=Hostnames
 _Comment=Configure the system hostnames
-Exec=kdesu gtkhostsetup
-Icon=pkexec gtkhostsetup
+Exec=env SUDO_ASKPASS=/usr/sbin/pysudo sudo -A gtkhostsetup
+Icon=gtkhostsetup
 Terminal=false
 Type=Application
 Categories=Application;System;
