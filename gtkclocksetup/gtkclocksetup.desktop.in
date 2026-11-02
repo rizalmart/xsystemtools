@@ -1,11 +1,11 @@
 [Desktop Entry]
 _Name=System Clock
 _Comment=System clock configuration tool
-Exec=pkexec gtkclocksetup
+Exec=env SUDO_ASKPASS=/usr/sbin/pysudo sudo -A gtkclocksetup
 Icon=gtkclocksetup
 Terminal=false
 Type=Application
-Categories=Application;System;
+Categories=Application;System;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
 StartupNotify=true
 Encoding=UTF-8
 NoDisplay=false
