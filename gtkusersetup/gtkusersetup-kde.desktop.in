@@ -1,7 +1,7 @@
 [Desktop Entry]
 _Name=Users and Groups
 _Comment=Users and groups management tool
-Exec=pkexec gtkusersetup
+Exec=env SUDO_ASKPASS=/usr/sbin/pysudo sudo -A gtkusersetup
 Icon=gtkusersetup
 Terminal=false
 Type=Application
