@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# gapan <vlahavas@gmail.com>, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-24 13:31+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gapan <vlahavas@gmail.com>, 2016\n"
+"Language-Team: Danish (http://www.transifex.com/gapan/salixtools-gtk/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkusersetup.ui:60
+msgid "User settings"
+msgstr "Brugerhåndtering"
+
+#: gtkusersetup.ui:84
+msgid "About"
+msgstr ""
+
+#: gtkusersetup.ui:98 gtkusersetup.ui:1192
+msgid "Close"
+msgstr ""
+
+#: gtkusersetup.ui:195 gtkusersetup.ui:1270
+msgid "Properties"
+msgstr ""
+
+#: gtkusersetup.ui:209 gtkusersetup.ui:1296
+msgid "Add"
+msgstr ""
+
+#: gtkusersetup.ui:223 gtkusersetup.ui:1061 gtkusersetup.ui:1322
+#: gtkusersetup.ui:1488
+msgid "Delete"
+msgstr ""
+
+#: gtkusersetup.ui:237
+msgid "Manage groups"
+msgstr "Håndtér grupper"
+
+#: gtkusersetup.ui:270
+msgid "Show all users"
+msgstr "Vis alle brugere"
+
+#: gtkusersetup.ui:315 gtkusersetup.desktop.in.h:2
+#: gtkusersetup-kde.desktop.in.h:2
+msgid "Users and groups management tool"
+msgstr "Håndteringsværktøj til brugere og grupper"
+
+#: gtkusersetup.ui:993
+msgid "translator-credits"
+msgstr "Kris Thomsen <lakristho~at~gmail~dot~com>"
+
+#: gtkusersetup.ui:1047 gtkusersetup.ui:1474 gtkusersetup.ui:1582
+#: gtkusersetup.ui:1906
+msgid "Cancel"
+msgstr ""
+
+#: gtkusersetup.ui:1141
+msgid "Also remove user's home directory"
+msgstr ""
+
+#: gtkusersetup.ui:1169
+msgid "Group settings"
+msgstr "Gruppeindstillinger"
+
+#: gtkusersetup.ui:1357
+msgid "Cannot delete group"
+msgstr "Kan ikke slette gruppe"
+
+#: gtkusersetup.ui:1382 gtkusersetup.ui:1596 gtkusersetup.ui:1811
+#: gtkusersetup.ui:1920 gtkusersetup.ui:2630
+msgid "OK"
+msgstr ""
+
+#: gtkusersetup.ui:1449
+msgid "Delete group?"
+msgstr "Slet gruppe?"
+
+#: gtkusersetup.ui:1560
+msgid "Group properties"
+msgstr "Gruppeegenskaber"
+
+#: gtkusersetup.ui:1626
+msgid "<b>Basic settings</b>"
+msgstr "<b>Grundlæggende indstillinger</b>"
+
+#: gtkusersetup.ui:1649
+msgid "Group name:"
+msgstr "Gruppenavn:"
+
+#: gtkusersetup.ui:1674
+msgid "Group ID:"
+msgstr "Gruppe-id:"
+
+#: gtkusersetup.ui:1709
+msgid "<b>Group members</b>"
+msgstr "<b>Gruppemedlemmer</b>"
+
+#: gtkusersetup.ui:1786 gtkusersetup.ui:2606
+msgid "Error!"
+msgstr "Fejl!"
+
+#: gtkusersetup.ui:1955
+msgid "<b>Basic information</b>"
+msgstr "<b>Grundlæggende information</b>"
+
+#: gtkusersetup.ui:1977
+msgid "Username:"
+msgstr "Brugernavn:"
+
+#: gtkusersetup.ui:1989
+msgid "Real name:"
+msgstr "Rigtigt navn:"
+
+#: gtkusersetup.ui:2056
+msgid "User password:"
+msgstr "Brugeradgangskode:"
+
+#: gtkusersetup.ui:2068
+msgid "Password confirmation:"
+msgstr "Adgangskode igen:"
+
+#: gtkusersetup.ui:2113
+msgid "View password while typing"
+msgstr "Vis adgangskode mens der skrives"
+
+#: gtkusersetup.ui:2132
+msgid "Account"
+msgstr "Konto"
+
+#: gtkusersetup.ui:2149
+msgid "<b>Contact information</b>"
+msgstr "<b>Kontaktinformation</b>"
+
+#: gtkusersetup.ui:2171
+msgid "Office information:"
+msgstr "Kontorinformation:"
+
+#: gtkusersetup.ui:2183
+msgid "Office extension:"
+msgstr "Kontorudvidelse:"
+
+#: gtkusersetup.ui:2195
+msgid "Home phone:"
+msgstr "Hjemmetelefon:"
+
+#: gtkusersetup.ui:2258
+msgid "Contact"
+msgstr "Kontakt"
+
+#: gtkusersetup.ui:2276
+msgid "<b>Group membership</b>"
+msgstr "<b>Gruppemedlemskab</b>"
+
+#: gtkusersetup.ui:2295
+msgid "Main group:"
+msgstr "Hovedgruppe:"
+
+#: gtkusersetup.ui:2333
+msgid "Other groups:"
+msgstr "Andre grupper:"
+
+#: gtkusersetup.ui:2410
+msgid "Groups"
+msgstr "Grupper"
+
+#: gtkusersetup.ui:2428
+msgid "<b>Advanced settings</b>"
+msgstr "<b>Avancerede indstillinger</b>"
+
+#: gtkusersetup.ui:2449
+msgid "Home directory:"
+msgstr "Hjemmemappe:"
+
+#: gtkusersetup.ui:2461
+msgid "Shell:"
+msgstr "Skal:"
+
+#: gtkusersetup.ui:2473
+msgid "UID:"
+msgstr "Bruger-id:"
+
+#: gtkusersetup.ui:2539
+msgid "Set account expiration date"
+msgstr "Angiv udløbsdato for konto"
+
+#: gtkusersetup.ui:2582
+msgid "Advanced"
+msgstr "Avanceret"
+
+#: gtkusersetup.py:224
+msgid "Password is too short. It has to be at least 5 characters long."
+msgstr "Adgangskoden er for kort. Den skal være mindst 5 tegn lang."
+
+#: gtkusersetup.py:227
+msgid "Password cannot include the backslash character."
+msgstr "Adgangskoden må ikke indeholde omvendt skråstreg."
+
+#: gtkusersetup.py:233
+msgid "Passwords don't match"
+msgstr "Adgangskoderne er forskellige"
+
+#: gtkusersetup.py:242
+msgid "Username cannot be empty."
+msgstr "Brugernavnet må ikke være tomt."
+
+#: gtkusersetup.py:245
+msgid "Username cannot exceed 31 characters"
+msgstr "Brugernavnet må ikke overskride 31 tegn"
+
+#: gtkusersetup.py:248
+msgid "Username cannot include the space character."
+msgstr "Brugernavnet må ikke indeholde mellemrumstegnet."
+
+#: gtkusersetup.py:251
+msgid "Username cannot start with a number."
+msgstr "Brugernavnet må ikke begynde med et nummer."
+
+#: gtkusersetup.py:254
+msgid "Username cannot start with an underscore."
+msgstr "Brugernavnet må ikke begynde med en bundstreg."
+
+#: gtkusersetup.py:257
+msgid "Username cannot start with a dash."
+msgstr "Brugernavnet må ikke begynde med en bindestreg."
+
+#: gtkusersetup.py:263
+msgid ""
+"Username can consist solely of latin lower case letters, numbers, dashes and"
+" underscores."
+msgstr "Brugernavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
+
+#: gtkusersetup.py:269
+#, python-brace-format
+msgid "Username \"{0}\" already exists."
+msgstr "Brugernavnet \"{0}\" findes allerede."
+
+#: gtkusersetup.py:280
+msgid "Group name cannot be empty."
+msgstr "Gruppenavnet må ikke være tomt."
+
+#: gtkusersetup.py:283
+msgid "Group name cannot exceed 31 characters"
+msgstr "Gruppenavnet må ikke overskride 31 tegn"
+
+#: gtkusersetup.py:286
+msgid "Group name cannot include the space character."
+msgstr "Gruppenavnet må ikke indeholde mellemrumstegnet."
+
+#: gtkusersetup.py:289
+msgid "Group name cannot start with a number."
+msgstr "Gruppenavnet må ikke begynde med et nummer."
+
+#: gtkusersetup.py:292
+msgid "Group name cannot start with an underscore."
+msgstr "Gruppenavnet må ikke begynde med en bundstreg."
+
+#: gtkusersetup.py:295
+msgid "Group name cannot start with a dash."
+msgstr "Gruppenavnet må ikke begynde med en bindestreg."
+
+#: gtkusersetup.py:301
+msgid ""
+"Group name can consist solely of latin lower case letters, numbers, dashes "
+"and underscores."
+msgstr "Gruppenavnet må kun indeholde små bogstaver, numre, bindestreger og bundstreger."
+
+#: gtkusersetup.py:307
+#, python-brace-format
+msgid "Group name \"{0}\" already exists."
+msgstr "Gruppenavnet \"{0}\" findes allerede."
+
+#: gtkusersetup.py:318
+msgid "Shell does not exist."
+msgstr "Skallen findes ikke."
+
+#: gtkusersetup.py:328
+#, python-brace-format
+msgid "UID {0} is assigned to another user."
+msgstr "Bruger-id'et {0} er tillagt en anden bruger."
+
+#: gtkusersetup.py:338
+#, python-brace-format
+msgid "GID {0} is assigned to another group."
+msgstr "Gruppe-id'et {0} er tillagt en anden gruppe."
+
+#: gtkusersetup.py:391
+#, python-brace-format
+msgid "User account properties for \"{0}\""
+msgstr "Egenskaber for brugerkonto \"{0}\""
+
+#: gtkusersetup.py:398
+msgid "<b>Set new password</b>"
+msgstr "<b>Angiv ny adgangskode</b>"
+
+#: gtkusersetup.py:456
+msgid "Add new user"
+msgstr "Tilføj ny bruger"
+
+#: gtkusersetup.py:463
+msgid "<b>Set password</b>"
+msgstr "<b>Angiv adgangskode</b>"
+
+#: gtkusersetup.py:514
+#, python-brace-format
+msgid "Delete user {0}?"
+msgstr "Slet brugeren {0}?"
+
+#: gtkusersetup.py:516
+#, python-brace-format
+msgid ""
+"You are about to remove user account \"{0}\" from your system. Do you really"
+" want to continue?"
+msgstr "Du er i gang med at fjerne brugerkontoen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
+
+#: gtkusersetup.py:518
+#, python-brace-format
+msgid "Completely remove user's home directory ({0}) with all its contents"
+msgstr "Fjern brugerens hjemmemappe ({0}) med alt dens indhold"
+
+#: gtkusersetup.py:775
+#, python-brace-format
+msgid "Group \"{0}\" properties"
+msgstr "Egenskaber for gruppe \"{0}\""
+
+#: gtkusersetup.py:794
+msgid "Add new group"
+msgstr "Tilføj ny gruppe"
+
+#: gtkusersetup.py:820
+#, python-brace-format
+msgid ""
+"You are about to delete the \"{0}\" group from your system. Are you sure you"
+" want to continue?"
+msgstr "Du er i gang med at slette gruppen \"{0}\" fra dit system. Er du sikker på at du vil fortsætte?"
+
+#: gtkusersetup.py:824
+#, python-brace-format
+msgid ""
+"Group \"{0}\" cannot be deleted as it is the main group for user \"{1}\". If"
+" you want to delete group \"{0}\", you have to set the main group for user "
+"\"{1}\" to another group first."
+msgstr "Gruppen \"{0}\" kan ikke slettes, eftersom den er hovedgruppen for brugeren \"{1}\". Hvis du virkelig vil slette gruppen \"{0}\", bliver du nødt til at angive en ny hovedgruppe for brugeren \"{1}\" først."
+
+#: gtkusersetup.py:954
+msgid "Username"
+msgstr "Brugernavn"
+
+#: gtkusersetup.py:955
+msgid "Real name"
+msgstr "Rigtigt navn"
+
+#: gtkusersetup.py:956
+msgid "Home directory"
+msgstr "Hjemmemappe"
+
+#: gtkusersetup.py:999
+msgid "Member"
+msgstr "Medlem"
+
+#: gtkusersetup.py:1000
+msgid "Group"
+msgstr "Gruppe"
+
+#: gtkusersetup.desktop.in.h:1 gtkusersetup-kde.desktop.in.h:1
+msgid "Users and Groups"
+msgstr "Håndtér brugere og grupper"

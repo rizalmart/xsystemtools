@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2011,2014,2019,2022
+# Sérgio Marques <smarquespt@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-24 13:21+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2011,2014,2019,2022\n"
+"Language-Team: Portuguese (Portugal) (http://www.transifex.com/gapan/salixtools-gtk/language/pt_PT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: gtkclocksetup.ui:23
+msgid "Date and time settings"
+msgstr "Definições de data e hora"
+
+#: gtkclocksetup.ui:47
+msgid "About"
+msgstr "Acerca"
+
+#: gtkclocksetup.ui:68 gtkclocksetup.ui:1167
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: gtkclocksetup.ui:82
+msgid "Apply changes"
+msgstr "Aplicar alterações"
+
+#: gtkclocksetup.ui:132
+msgid "Synchronize now"
+msgstr "Sincronizar agora"
+
+#: gtkclocksetup.ui:147 gtkclocksetup.py:238 gtkclocksetup.py:274
+msgid "Time zone:"
+msgstr "Fuso horário:"
+
+#: gtkclocksetup.ui:157
+msgid "Select time zone..."
+msgstr "Selecione o fuso horário..."
+
+#: gtkclocksetup.ui:190
+msgid "Keep clock synchronized with internet servers"
+msgstr "Manter relógio sincronizado com os servidores web"
+
+#: gtkclocksetup.ui:220
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not enable this if you are not sure."
+msgstr "Os relógios de hardware na maioria dos computadores domésticos ou comerciais estão definidos para utilizar a hora local, enquanto que o relógio de hardware na maioria dos servidores web está provavelmente definido para UTC. Não ative isto se não tiver a certeza."
+
+#: gtkclocksetup.ui:233
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "O relógio está definido para hora universal (UTC)"
+
+#: gtkclocksetup.ui:261
+msgid "Date:"
+msgstr "Data:"
+
+#: gtkclocksetup.ui:288
+msgid "Time:"
+msgstr "Hora:"
+
+#: gtkclocksetup.ui:423 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "Ferramenta de configuração do relógio do sistema"
+
+#: gtkclocksetup.ui:1101
+msgid "translator-credits"
+msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>\nSérgio Marques <smarquespt@gmail.com>"
+
+#: gtkclocksetup.ui:1144
+msgid "Select time zone"
+msgstr "Selecione o fuso horário"
+
+#: gtkclocksetup.ui:1181
+msgid "Select"
+msgstr "Selecionar"
+
+#: gtkclocksetup.ui:1210
+msgid "Please select your time zone:"
+msgstr "Selecione o seu fuso horário:"
+
+#: gtkclocksetup.py:290
+msgid "General area"
+msgstr "Área geral"
+
+#: gtkclocksetup.py:291
+msgid "Location"
+msgstr "Localização"
+
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System Clock"
+msgstr "Relógio do sistema"

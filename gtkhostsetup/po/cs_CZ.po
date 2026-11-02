@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Jiří Vírava <appukonrad@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-24 12:58+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: Jiří Vírava <appukonrad@gmail.com>, 2013\n"
+"Language-Team: Czech (Czech Republic) (http://www.transifex.com/gapan/salixtools-gtk/language/cs_CZ/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: gtkhostsetup.ui:25 gtkhostsetup.desktop.in.h:1
+#: gtkhostsetup-kde.desktop.in.h:1
+msgid "Hostnames"
+msgstr ""
+
+#: gtkhostsetup.ui:49
+msgid "About"
+msgstr ""
+
+#: gtkhostsetup.ui:70 gtkhostsetup.ui:1133 gtkhostsetup.ui:1383
+msgid "Cancel"
+msgstr ""
+
+#: gtkhostsetup.ui:84
+msgid "Apply changes"
+msgstr ""
+
+#: gtkhostsetup.ui:127
+msgid "<b>This computer:</b>"
+msgstr "<b>Tento počítač:</b>"
+
+#: gtkhostsetup.ui:149 gtkhostsetup.ui:1204 gtkhostsetup.ui:1454
+msgid "Hostname:"
+msgstr ""
+
+#: gtkhostsetup.ui:161 gtkhostsetup.ui:1230 gtkhostsetup.ui:1480
+msgid "Domain:"
+msgstr "Doména:"
+
+#: gtkhostsetup.ui:218
+msgid "<b>Other hosts:</b>"
+msgstr ""
+
+#: gtkhostsetup.ui:313
+msgid "Add"
+msgstr ""
+
+#: gtkhostsetup.ui:327
+msgid "Edit"
+msgstr ""
+
+#: gtkhostsetup.ui:341
+msgid "Remove"
+msgstr ""
+
+#: gtkhostsetup.ui:401 gtkhostsetup.desktop.in.h:2
+#: gtkhostsetup-kde.desktop.in.h:2
+msgid "Configure the system hostnames"
+msgstr ""
+
+#: gtkhostsetup.ui:1080
+msgid "translator-credits"
+msgstr "zásluha na překladu"
+
+#: gtkhostsetup.ui:1109
+msgid "Add host"
+msgstr ""
+
+#: gtkhostsetup.ui:1147 gtkhostsetup.ui:1293 gtkhostsetup.ui:1397
+#: gtkhostsetup.ui:1543 gtkhostsetup.ui:1633
+msgid "OK"
+msgstr ""
+
+#: gtkhostsetup.ui:1178 gtkhostsetup.ui:1428
+msgid "IP address:"
+msgstr "Adresa IP:"
+
+#: gtkhostsetup.ui:1269 gtkhostsetup.ui:1519 gtkhostsetup.ui:1609
+msgid "Error"
+msgstr "Chyba"
+
+#: gtkhostsetup.ui:1359
+msgid "Edit host"
+msgstr ""
+
+#: gtkhostsetup.py:68
+msgid "The IP address cannot be empty."
+msgstr "IP adresa nemůže být prázdná."
+
+#: gtkhostsetup.py:71
+msgid "The hostname cannot be empty."
+msgstr ""
+
+#: gtkhostsetup.py:74
+msgid "The hostname cannot start with a hyphen."
+msgstr ""
+
+#: gtkhostsetup.py:77
+msgid "The hostname cannot end with a hyphen."
+msgstr ""
+
+#: gtkhostsetup.py:80
+msgid "The domain cannot start with a hyphen."
+msgstr "Doména nesmí začínat pomlčkou."
+
+#: gtkhostsetup.py:83
+msgid "The domain cannot end with a hyphen."
+msgstr "Doména nesmí končit pomlčkou."
+
+#: gtkhostsetup.py:88
+msgid "Not a valid IP address."
+msgstr "Není platná adresa IP."
+
+#: gtkhostsetup.py:94
+msgid "The hostname can consist solely of latin letters, numbers and hyphens."
+msgstr ""
+
+#: gtkhostsetup.py:100
+msgid ""
+"The domain can consist solely of latin letters, numbers, hyphens and dots."
+msgstr "Doména může obsahovat pouze z latinské písmena, číslice, pomlčky a tečky."
+
+#: gtkhostsetup.py:306
+msgid "IP address"
+msgstr "Adresa IP"
+
+#: gtkhostsetup.py:307
+msgid "Hostname"
+msgstr ""
+
+#: gtkhostsetup.py:308
+msgid "Domain"
+msgstr "Doména"

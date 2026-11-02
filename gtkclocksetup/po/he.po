@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# gk <genghiskhan@gmx.ca>, 2013
+# gk <genghiskhan@gmx.ca>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: salixtools-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-24 13:21+0300\n"
+"PO-Revision-Date: 2010-11-30 12:19+0000\n"
+"Last-Translator: gk <genghiskhan@gmx.ca>, 2013\n"
+"Language-Team: Hebrew (http://www.transifex.com/gapan/salixtools-gtk/language/he/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#: gtkclocksetup.ui:23
+msgid "Date and time settings"
+msgstr "הגדרות זמן ותאריך"
+
+#: gtkclocksetup.ui:47
+msgid "About"
+msgstr ""
+
+#: gtkclocksetup.ui:68 gtkclocksetup.ui:1167
+msgid "Cancel"
+msgstr ""
+
+#: gtkclocksetup.ui:82
+msgid "Apply changes"
+msgstr ""
+
+#: gtkclocksetup.ui:132
+msgid "Synchronize now"
+msgstr "סנכרן כעת"
+
+#: gtkclocksetup.ui:147 gtkclocksetup.py:238 gtkclocksetup.py:274
+msgid "Time zone:"
+msgstr "אזור זמן:"
+
+#: gtkclocksetup.ui:157
+msgid "Select time zone..."
+msgstr "בחירת אזור זמן..."
+
+#: gtkclocksetup.ui:190
+msgid "Keep clock synchronized with internet servers"
+msgstr "השאר את השעון מסונכרן עם שרתי אינטרנט"
+
+#: gtkclocksetup.ui:220
+msgid ""
+"Hardware clocks in most home or business computers are set to using local "
+"time, while the hardware clock in most web servers is probably set to UTC. "
+"Do not enable this if you are not sure."
+msgstr ""
+
+#: gtkclocksetup.ui:233
+msgid "Hardware clock is set to Coordinated Universal Time (UTC)"
+msgstr "שעון חמרה קבוע לזמן הכלל עולמי המתואם (UTC)"
+
+#: gtkclocksetup.ui:261
+msgid "Date:"
+msgstr "תאריך:"
+
+#: gtkclocksetup.ui:288
+msgid "Time:"
+msgstr "זמן:"
+
+#: gtkclocksetup.ui:423 gtkclocksetup.desktop.in.h:2
+#: gtkclocksetup-kde.desktop.in.h:2
+msgid "System clock configuration tool"
+msgstr "כלי עזר לקביעת תצורת שעון מערכת"
+
+#: gtkclocksetup.ui:1101
+msgid "translator-credits"
+msgstr "Transifex Contributors:\n  https://www.transifex.net/accounts/profile/sharemore/\n\nRahut Contributors:\n  Isratine Citizen <genghiskhan@gmx.ca>"
+
+#: gtkclocksetup.ui:1144
+msgid "Select time zone"
+msgstr "בחירת אזור זמן"
+
+#: gtkclocksetup.ui:1181
+msgid "Select"
+msgstr ""
+
+#: gtkclocksetup.ui:1210
+msgid "Please select your time zone:"
+msgstr "אנא בחר את אזור הזמן שלך:"
+
+#: gtkclocksetup.py:290
+msgid "General area"
+msgstr "אזור כללי"
+
+#: gtkclocksetup.py:291
+msgid "Location"
+msgstr "מיקום"
+
+#: gtkclocksetup.desktop.in.h:1 gtkclocksetup-kde.desktop.in.h:1
+msgid "System Clock"
+msgstr "שעון מערכת"
