@@ -107,12 +107,13 @@ def settimezone(continent, location):
 def ntpstate():
 
     # SysVinit
-    if os.access('/etc/init.d/rc.ntpd', os.X_OK):
-        return True
-
+    for service in ['chrony', 'chronyd', 'rc.chrony', 'ntp', 'ntpd', 'rc.ntpd', 'rc.ntp']:
+        if os.access('/etc/init.d/'+ service, os.X_OK):
+            return True    
+        
     # systemd
     if os.path.exists('/run/systemd/system'):
-        for service in ['ntpd.service', 'ntp.service', 'chronyd.service']:
+        for service in ['chronyd.service', 'chrony.service', 'ntpd.service', 'ntp.service']:
             try:
                 result = subprocess.run(
                     ['systemctl', 'is-enabled', service],
@@ -127,7 +128,7 @@ def ntpstate():
                 pass
 
     # runit
-    for service in ['ntpd', 'ntp', 'chronyd']:
+    for service in ['chronyd', 'chrony', 'ntpd', 'ntp']:
         if os.path.isdir('/etc/service/' + service):
             return True
 
@@ -137,26 +138,22 @@ def ntpstate():
 def ntppresent():
     
     # SysVinit
-    if os.path.isfile('/etc/init.d/rc.ntpd'):
-        return True
-
-    # systemd
-    if os.path.isfile('/usr/lib/systemd/system/ntpd.service') \
-       or os.path.isfile('/usr/lib/systemd/system/ntp.service') \
-       or os.path.isfile('/usr/lib/systemd/system/chronyd.service') \
-       or os.path.isfile('/etc/systemd/system/ntpd.service') \
-       or os.path.isfile('/etc/systemd/system/ntp.service') \
-       or os.path.isfile('/etc/systemd/system/chronyd.service'):
-        return True
-
-    # runit
-    if os.path.isdir('/etc/sv/ntpd') \
-       or os.path.isdir('/etc/sv/ntp') \
-       or os.path.isdir('/etc/sv/chronyd') \
-       or os.path.isdir('/etc/service/ntpd') \
-       or os.path.isdir('/etc/service/ntp') \
-       or os.path.isdir('/etc/service/chronyd'):
-        return True
+    for service in ['chrony', 'chronyd', 'rc.chrony', 'ntp', 'ntpd', 'rc.ntpd', 'rc.ntp']:
+        if os.path.isfile('/etc/init.d/' + service) \
+           or os.path.isfile('/etc/rc.d/' + service) :		           
+            return True    
+    
+    #systemd
+    for service in ['chronyd.service', 'chrony.service', 'ntpd.service', 'ntp.service']:
+        if os.path.isfile('/usr/lib/systemd/system/' + service) \
+           or os.path.isfile('/etc/systemd/system/' + service) :
+            return True    
+    
+    #runit
+    for service in ['chronyd', 'chrony', 'ntpd', 'ntp']:
+        if os.path.isdir('/etc/sv/' + service) \
+           or os.path.isdir('/etc/service/' + service) :
+            return True    
 
     return False
 
@@ -251,27 +248,26 @@ def setntp(state):
     # systemd
     if os.path.isdir('/run/systemd/system'):
 
-        if os.path.isfile('/usr/lib/systemd/system/chronyd.service') \
-           or os.path.isfile('/etc/systemd/system/chronyd.service'):
-            service_name = 'chronyd'
-        elif os.path.isfile('/usr/lib/systemd/system/ntp.service') \
-             or os.path.isfile('/etc/systemd/system/ntp.service'):
-            service_name = 'ntp'
+      for service in ['chronyd', 'chrony', 'ntpd', 'ntp']:
+        if os.path.isfile('/usr/lib/systemd/system/' + service + '.service') \
+            or os.path.isfile('/etc/systemd/system/' + service + '.service') :
+              service_name = service
+              break  
 
-        if state == True:
-            cmd = ['systemctl', 'start', service_name]
-        else:
-            cmd = ['systemctl', 'stop', service_name]
+      if state == True:
+        cmd = ['systemctl', 'start', service_name]
+      else:
+        cmd = ['systemctl', 'stop', service_name]
 
     # runit
     elif os.path.isdir('/run/runit/service') or os.path.isdir('/etc/service'):
 
-        if os.path.isdir('/etc/service/chronyd') \
-           or os.path.isdir('/etc/sv/chronyd'):
-            service_name = 'chronyd'
-        elif os.path.isdir('/etc/service/ntp') \
-             or os.path.isdir('/etc/sv/ntp'):
-            service_name = 'ntp'
+        for service in ['chronyd', 'chrony', 'ntpd', 'ntp']:
+         if os.path.isdir('/etc/sv/' + service) \
+           or os.path.isdir('/etc/service/' + service) :
+             service_name=service
+             break   
+
 
         if state == True:
             cmd = ['sv', 'start', service_name]
@@ -280,16 +276,24 @@ def setntp(state):
 
     # SysVinit
     else:
-
-        if os.path.isfile('/etc/init.d/chronyd'):
-            service_name = 'chronyd'
-        elif os.path.isfile('/etc/init.d/ntp'):
-            service_name = 'ntp'
+        
+        service_cmd = '/etc/init.d/'+ service_name
+        
+        for service in ['chrony', 'chronyd', 'rc.chrony', 'ntp', 'ntpd', 'rc.ntpd', 'rc.ntp']:
+           if os.path.isfile('/etc/init.d/' + service) \
+              or os.path.isfile('/etc/rc.d/' + service) :
+                 service_name = service
+                 break  
+            
+        if os.path.isfile('/etc/init.d/'+ service_name):
+            service_cmd = '/etc/init.d/'+ service_name
+        elif os.path.isfile('/etc/rc.d/'+ service_name):
+            service_cmd = '/etc/rc.d/'+ service_name
 
         if state == True:
-            cmd = ['/usr/sbin/service', 'start', service_name]
+            cmd = [service_cmd, 'start']
         else:
-            cmd = ['/usr/sbin/service', 'stop', service_name]
+            cmd = [service_cmd, 'stop']
 
     process = subprocess.Popen(cmd)
     process.wait()
