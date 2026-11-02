@@ -3,7 +3,7 @@
 A simple collection of GTK+3 essential system administration utilities
 written in Python.
 
-Forked from Salix Linux. Now made for all distros especially DE's that has lack of some system tools.
+Forked from Salix Linux. Now made for all distros especially DE's that has lack of some system tools such as XFCE
 
 It works on sysvinit, systemd, and runit init system
 
