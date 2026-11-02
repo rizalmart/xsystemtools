@@ -245,6 +245,7 @@ def ntp_sync_now():
 def setntp(state):
 
     cmd=[]
+    service_name=''
 
     # systemd
     if os.path.isdir('/run/systemd/system'):
@@ -254,11 +255,12 @@ def setntp(state):
             or os.path.isfile('/etc/systemd/system/' + service + '.service') :
               service_name = service
               break  
-
-      if state == True:
-        cmd = ['systemctl', 'start', service_name]
-      else:
-        cmd = ['systemctl', 'stop', service_name]
+              
+      if service_name != "":
+         if state == True:
+          cmd = ['systemctl', 'start', service_name]
+         else:
+          cmd = ['systemctl', 'stop', service_name]
 
     # runit
     elif os.path.isdir('/run/runit/service') or os.path.isdir('/etc/service'):
@@ -269,10 +271,10 @@ def setntp(state):
              service_name=service
              break   
 
-
-        if state == True:
-            cmd = ['sv', 'start', service_name]
-        else:
+        if service_name != "":
+           if state == True:
+             cmd = ['sv', 'start', service_name]
+           else:
             cmd = ['sv', 'stop', service_name]
 
     # SysVinit
@@ -285,17 +287,18 @@ def setntp(state):
               or os.path.isfile('/etc/rc.d/' + service) :
                  service_name = service
                  break  
-            
-        if os.path.isfile('/etc/init.d/'+ service_name) and os.access('/etc/init.d/'+ service_name, os.X_OK):
+        
+        if service_name != "":            
+          if os.path.isfile('/etc/init.d/'+ service_name) and os.access('/etc/init.d/'+ service_name, os.X_OK):
             service_cmd = '/etc/init.d/'+ service_name
-        elif os.path.isfile('/etc/rc.d/'+ service_name) and os.access('/etc/rc.d/'+ service_name, os.X_OK):
+          elif os.path.isfile('/etc/rc.d/'+ service_name) and os.access('/etc/rc.d/'+ service_name, os.X_OK):
             service_cmd = '/etc/rc.d/'+ service_name
         
-        if service_cmd != "":
-           if state == True:
-             cmd = [service_cmd, 'start']
-           else:
-             cmd = [service_cmd, 'stop']
+          if service_cmd != "":
+            if state == True:
+              cmd = [service_cmd, 'start']
+            else:
+              cmd = [service_cmd, 'stop']
 
 
     if cmd:
