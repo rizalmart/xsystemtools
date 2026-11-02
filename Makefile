@@ -17,6 +17,9 @@ install:
 	for i in $(TOOLS); do \
 		$(MAKE) install -C $$i; \
 	done
+	
+	install -d -m 755 $(DESTDIR)/usr/sbin
+	install -m 755 misc/pysudo $(DESTDIR)/usr/sbin/pysudo	
 
 .PHONY: clean
 clean:
