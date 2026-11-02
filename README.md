@@ -5,6 +5,8 @@ written in Python.
 
 Forked from Salix Linux. Now made for all distros especially DE's that has lack of some system tools.
 
+It works on sysvinit, systemd, and runit init system
+
 ## Maintained Utilities
 
 - gtkclocksetup - Configure system date and time.
