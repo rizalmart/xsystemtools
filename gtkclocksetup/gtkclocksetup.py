@@ -108,7 +108,8 @@ def ntpstate():
 
     # SysVinit
     for service in ['chrony', 'chronyd', 'rc.chrony', 'ntp', 'ntpd', 'rc.ntpd', 'rc.ntp']:
-        if os.access('/etc/init.d/'+ service, os.X_OK):
+        if os.access('/etc/init.d/'+ service, os.X_OK) \
+           or os.access('/etc/rc.d/'+ service, os.X_OK) :
             return True    
         
     # systemd
@@ -243,7 +244,7 @@ def ntp_sync_now():
 
 def setntp(state):
 
-    service_name = 'ntpd'
+    cmd=[]
 
     # systemd
     if os.path.isdir('/run/systemd/system'):
@@ -277,7 +278,7 @@ def setntp(state):
     # SysVinit
     else:
         
-        service_cmd = '/etc/init.d/'+ service_name
+        service_cmd = ''
         
         for service in ['chrony', 'chronyd', 'rc.chrony', 'ntp', 'ntpd', 'rc.ntpd', 'rc.ntp']:
            if os.path.isfile('/etc/init.d/' + service) \
@@ -285,18 +286,21 @@ def setntp(state):
                  service_name = service
                  break  
             
-        if os.path.isfile('/etc/init.d/'+ service_name):
+        if os.path.isfile('/etc/init.d/'+ service_name) and os.access('/etc/init.d/'+ service_name, os.X_OK):
             service_cmd = '/etc/init.d/'+ service_name
-        elif os.path.isfile('/etc/rc.d/'+ service_name):
+        elif os.path.isfile('/etc/rc.d/'+ service_name) and os.access('/etc/rc.d/'+ service_name, os.X_OK):
             service_cmd = '/etc/rc.d/'+ service_name
+        
+        if service_cmd != "":
+           if state == True:
+             cmd = [service_cmd, 'start']
+           else:
+             cmd = [service_cmd, 'stop']
 
-        if state == True:
-            cmd = [service_cmd, 'start']
-        else:
-            cmd = [service_cmd, 'stop']
 
-    process = subprocess.Popen(cmd)
-    process.wait()
+    if cmd:
+       process = subprocess.Popen(cmd)
+       process.wait()
 
 
 class GTKClockSetup:
