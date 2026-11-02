@@ -18,7 +18,7 @@ It works on sysvinit, systemd, and runit init system
 - Python 3
 - GTK+3
 - PyGObject
-- Required command-line utilities for each application.
+- Required command-line utilities for each application (such as ntpd/chronyd and hwclock)
 
 ## Building
 
