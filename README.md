@@ -1,4 +1,4 @@
-# xsystemtools-GTK
+# xsystemtools
 
 A simple collection of GTK+3 essential system administration utilities
 written in Python.
