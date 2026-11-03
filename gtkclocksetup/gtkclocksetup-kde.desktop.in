@@ -5,7 +5,7 @@ Exec=env SUDO_ASKPASS=/usr/sbin/pysudo sudo -A gtkclocksetup
 Icon=gtkclocksetup
 Terminal=false
 Type=Application
-Categories=Application;System;
+Categories=Application;System;Settings;
 StartupNotify=true
 Encoding=UTF-8
 NoDisplay=false
